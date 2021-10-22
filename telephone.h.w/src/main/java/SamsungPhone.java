@@ -1,7 +1,4 @@
-package ua.lv.ponomarenko.nazar.telephone;
-
 public class SamsungPhone implements PhoneConnection, PhoneMedia {
-
     @Override
     public void call() {
         System.out.println("Samsung can call");
@@ -21,4 +18,5 @@ public class SamsungPhone implements PhoneConnection, PhoneMedia {
     public void videoRecording() {
         System.out.println("Samsung can shoot video");
     }
+
 }

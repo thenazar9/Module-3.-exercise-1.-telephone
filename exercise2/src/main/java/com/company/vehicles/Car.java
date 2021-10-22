@@ -1,27 +1,62 @@
 package com.company.vehicles;
 
 import com.company.detailsі.Engine;
-import com.company.professions.Driver;
+
+import java.sql.Driver;
 
 public class Car {
-    String brand = "Mercedes-Benz";
-    String carClass= "S-Class";
-    int weight = 2350;
-    static Driver driver;
-    static Engine engine;
-    public void start(){
+    private String brand;
+    private String carClass;
+    private int weight;
+    Engine engine;
+    Driver driver;
+
+    public void setBrand(String carBrand) {
+        brand = carBrand;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setCarClass(String carCarClass) {
+        carClass = carCarClass;
+    }
+
+    public String getCarClass() {
+        return carClass;
+    }
+
+    public void setWeight(int carWeight) {
+        weight = carWeight;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void start() {
         System.out.println("Поїхали");
     }
-    public void stop(){
+
+    public void stop() {
         System.out.println("Зупиняємося");
     }
-    public void turnRight(){
+
+    public void turnRight() {
         System.out.println("Поворот направо");
     }
-    public void turnLeft(){
+
+    public void turnLeft() {
         System.out.println("Поворот наліво");
     }
-    public void tostring(){
-        System.out.println(brand + ", " + carClass + ", " + weight + " k.g.");
+
+    @Override
+    public String toString() {
+        return brand + ", " + carClass +
+                ", " + weight + " k.g." +
+                ", engine=" + engine +
+                ", driver=" + driver;
+
     }
 }

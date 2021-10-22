@@ -1,5 +1,3 @@
-package ua.lv.ponomarenko.nazar.telephone;
-
 public class NokiaPhone implements PhoneConnection {
 
     @Override

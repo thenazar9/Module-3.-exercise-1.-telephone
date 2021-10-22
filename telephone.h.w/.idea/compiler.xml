@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="telephone" />
+        <module name="telephone.h.w" />
+        <module name="telephone.h.w." />
       </profile>
     </annotationProcessing>
   </component>

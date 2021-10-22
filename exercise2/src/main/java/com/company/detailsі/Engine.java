@@ -2,11 +2,28 @@ package com.company.detailsі;
 
 import com.company.vehicles.Car;
 
-public class Engine  {
-    int power = 612;
-    String producer = "germany";
-    public void tostring( ){
-        System.out.println(power + " h.p., producer " + producer);
+import java.sql.Driver;
 
+public class Engine {
+    private int power;
+    private String producer;
+
+public void setPower(int enginePower){
+    power = enginePower;
+}
+public int getPower(){
+    return power;
+}
+public void setProducer(String engineProducer){
+    producer = engineProducer;
+}
+public String getProducer(){
+    return producer;
+}
+
+    @Override
+    public String toString() {
+        return power + " h.p." +
+                ", producer " + producer;
     }
 }

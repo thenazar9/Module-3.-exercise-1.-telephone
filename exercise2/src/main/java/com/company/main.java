@@ -15,15 +15,33 @@ public class main {
         Lorry lorry = new Lorry();
         SportCar sportCar = new SportCar();
         Person person = new Person();
+        driver.setName("Bob");
+        driver.setDrivingExperience(4);
+        car.setBrand("Mercedes-Benz");
+        car.setCarClass("S-Class");
+        car.setWeight(2350);
+        engine.setPower(612);
+        engine.setProducer("germany");
+        lorry.setLoadCapacity(7);
+        sportCar.setMaxSpeed(250);
+        person.setAge(25);
+        person.setLives("San Francisco");
 car.start();
 car.stop();
 car.turnRight();
 car.turnLeft();
-car.tostring();
-engine.tostring();
-driver.tostring();
-lorry.setLoadCapacity();
-sportCar.setMaxSpeed();
-person.info();
+car.toString();
+engine.toString();
+lorry.toString();
+sportCar.toString();
+driver.toString();
+person.toString();
+        System.out.println(car);
+        System.out.println(engine);
+        System.out.println(lorry);
+        System.out.println(sportCar);
+        System.out.println(driver);
+        System.out.println(person);
+
     }
 }
