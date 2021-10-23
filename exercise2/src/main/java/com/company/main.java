@@ -9,12 +9,15 @@ import com.company.vehicles.SportCar;
 
 public class main {
     public static void main(String[] args) {
-        Car car = new Car();
-        Engine engine = new Engine();
-        Driver driver = new Driver();
-        Lorry lorry = new Lorry();
-        SportCar sportCar = new SportCar();
-        Person person = new Person();
+        Driver driver = new Driver("Bob", 4);
+        Engine engine = new Engine(612, "germany");
+        Car car = new Car("Mercedes-Benz", "S-Class", 2350, engine, driver);
+        Lorry lorry = new Lorry("Mercedes-Benz", "S-Class", 2350,
+                engine, driver, 7);
+        SportCar sportCar = new SportCar( "Mercedes-Benz", "S-Class", 2350,
+                engine, driver, 250);
+        Person person = new Person("Bob", 4, 25, "San Francisco");
+
         driver.setName("Bob");
         driver.setDrivingExperience(4);
         car.setBrand("Mercedes-Benz");

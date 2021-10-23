@@ -16,6 +16,11 @@ public int getAge(){
         return lives;
     }
 
+    public Person(String name, int drivingExperience, int age, String lives) {
+        super(name, drivingExperience);
+        this.age = age;
+        this.lives = lives;
+    }
 
     @Override
     public String toString() {

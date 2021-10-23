@@ -21,6 +21,11 @@ public String getProducer(){
     return producer;
 }
 
+    public Engine(int power, String producer) {
+        this.power = power;
+        this.producer = producer;
+    }
+
     @Override
     public String toString() {
         return power + " h.p." +
