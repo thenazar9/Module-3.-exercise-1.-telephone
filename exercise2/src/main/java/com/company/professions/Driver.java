@@ -1,8 +1,5 @@
 package com.company.professions;
 
-import com.company.detailsі.Engine;
-import com.company.vehicles.Car;
-
 import java.sql.Connection;
 import java.sql.DriverPropertyInfo;
 import java.sql.SQLException;
@@ -10,7 +7,7 @@ import java.sql.SQLFeatureNotSupportedException;
 import java.util.Properties;
 import java.util.logging.Logger;
 
-public class Driver implements java.sql.Driver {
+public class Driver extends Person implements java.sql.Driver {
     private String name;
     private int drivingExperience;
     public void setName(String driverName){
@@ -25,16 +22,17 @@ public class Driver implements java.sql.Driver {
         return drivingExperience;
     }
 
-    public Driver(String name, int drivingExperience) {
+    public Driver(int age, String lives, String name, int drivingExperience) {
+        super(age, lives);
         this.name = name;
         this.drivingExperience = drivingExperience;
     }
 
-
     @Override
     public String toString() {
-        return name +  ", driving experience " + drivingExperience + " years" ;
+        return name +  ", driving experience " + drivingExperience + " years" + super.toString() ;
     }
+
 
     @Override
     public Connection connect(String url, Properties info) throws SQLException {

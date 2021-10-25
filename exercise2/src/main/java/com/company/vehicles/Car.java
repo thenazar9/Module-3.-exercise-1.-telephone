@@ -10,6 +10,7 @@ public class Car {
     private int weight;
     private Engine engine;
     private Driver driver;
+
     public Car(String brand, String carClass, int weight, Engine engine, Driver driver) {
         this.brand = brand;
         this.carClass = carClass;
@@ -78,5 +79,4 @@ public void setEngine(){
                   driver;
 
     }
-
 }

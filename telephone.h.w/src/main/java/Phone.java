@@ -3,13 +3,13 @@ public class Phone {
 String model;
 int storageCapacity;
 int amountOfRAM;
-public Phone(String name,String model,int storageCapacity,int amountOfRAM){
-this.name = name;
-this.model = model;
-this.storageCapacity = storageCapacity;
-this.amountOfRAM = amountOfRAM;
 
-}
+    public Phone(String name, String model, int storageCapacity, int amountOfRAM) {
+        this.name = name;
+        this.model = model;
+        this.storageCapacity = storageCapacity;
+        this.amountOfRAM = amountOfRAM;
+    }
 
     public static void main(String[] args) {
         Phone Samsung = new Phone("Samsung, ", "Galaxy S21, ", 256, 8); {
@@ -26,8 +26,5 @@ this.amountOfRAM = amountOfRAM;
         nokiaphone.call();
         nokiaphone.sendAMessage();
     }
-
-
-
 }
 
