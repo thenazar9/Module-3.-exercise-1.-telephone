@@ -6,7 +6,7 @@ public class Duck extends Animal implements move, fly {
         this.name = name;
     }
 public void voice(){
-    System.out.println("crya");
+    System.out.println("Duck talking \"crya\" ");
 }
 
     public String getName() {

@@ -22,7 +22,8 @@ public class Dog extends Animal implements move{
 
     @Override
     public void voice() {
-            System.out.println("woof");
+            System.out.println( "Dog talking \"woof\" ");
+
     }
 
     @Override

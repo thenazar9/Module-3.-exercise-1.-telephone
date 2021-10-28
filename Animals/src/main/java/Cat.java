@@ -16,7 +16,7 @@ public class Cat extends Animal implements move{
 
     @Override
     public void voice() {
-        System.out.println("meow");
+        System.out.println("Cat talking \"meow\" ");
     }
 
     @Override
