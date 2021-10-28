@@ -1,5 +1,6 @@
 package com.company.professions;
 
+
 import java.sql.Connection;
 import java.sql.DriverPropertyInfo;
 import java.sql.SQLException;
@@ -30,7 +31,7 @@ public class Driver extends Person implements java.sql.Driver {
 
     @Override
     public String toString() {
-        return name +  ", driving experience " + drivingExperience + " years" + super.toString() ;
+        return name +  ", driving experience " + drivingExperience + " years, " + super.toString() ;
     }
 
 

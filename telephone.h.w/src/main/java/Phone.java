@@ -1,8 +1,8 @@
-public class Phone {
-    String name;
-String model;
-int storageCapacity;
-int amountOfRAM;
+public abstract class Phone implements PhoneConnection {
+   private String name;
+private String model;
+private int storageCapacity;
+private int amountOfRAM;
 
     public Phone(String name, String model, int storageCapacity, int amountOfRAM) {
         this.name = name;
@@ -10,21 +10,43 @@ int amountOfRAM;
         this.storageCapacity = storageCapacity;
         this.amountOfRAM = amountOfRAM;
     }
+public void setName(String name){
+        this.name = name;
+}
+public String getName(){
+        return name;
+}
 
-    public static void main(String[] args) {
-        Phone Samsung = new Phone("Samsung, ", "Galaxy S21, ", 256, 8); {
-        }
-        Phone Nokia = new Phone("Nokia, ", "X20, ", 128, 8); {}
-        System.out.println(Samsung.name + Samsung.model + Samsung.storageCapacity+ ", " + Samsung.amountOfRAM);
-        System.out.println(Nokia.name + Nokia.model + Nokia.storageCapacity+ ", " + Nokia.amountOfRAM);
-        SamsungPhone samsungPhone = new SamsungPhone();
-        samsungPhone.videoRecording();
-        samsungPhone.takeAPhoto();
-        samsungPhone.call();
-        samsungPhone.sendAMessage();
-        NokiaPhone nokiaphone = new NokiaPhone();
-        nokiaphone.call();
-        nokiaphone.sendAMessage();
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getStorageCapacity() {
+        return storageCapacity;
+    }
+
+    public void setStorageCapacity(int storageCapacity) {
+        this.storageCapacity = storageCapacity;
+    }
+
+    public int getAmountOfRAM() {
+        return amountOfRAM;
+    }
+
+    public void setAmountOfRAM(int amountOfRAM) {
+        this.amountOfRAM = amountOfRAM;
+    }
+
+    @Override
+    public String toString() {
+        return name +
+                ", " + model  +
+                ", storage capacity = " + storageCapacity +
+                ", amount of RAM = " + amountOfRAM ;
     }
 }
 

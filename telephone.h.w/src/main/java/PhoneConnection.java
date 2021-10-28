@@ -1,7 +1,7 @@
 public interface PhoneConnection {
-    void call();
+    void call(String number);
 
-    default void sendAMessage() {}
+    default void sendAMessage(String number, String text) {}
 
 
 }
